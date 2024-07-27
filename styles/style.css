@@ -1,0 +1,287 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: #262261;
+    font-family: "Poppins", sans-serif;
+
+}
+.header{
+    background-color: #1C1C3C;
+    height: 80px;
+
+
+}
+.header img{
+    padding-left: 20px;
+    position: absolute;
+    justify-content: center;
+    align-content: center;
+}
+.header h2{
+    position: absolute;
+    left: 89px;
+    top: 25px;
+    color: white;
+}
+.button-container {
+    display: flex;
+    background-color: #1C1C3C;
+    width: 350px;
+    height: 40px;
+    align-items: center;
+    justify-content: space-around;
+    border-radius: 10px;
+    transition: all 0.5s;
+
+
+
+}
+.button-container:hover {
+    width: 400px;
+    transition: all 0.5s;
+}
+
+.button {
+    outline: 0 !important;
+    border: 0 !important;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    transition: all ease-in-out 0.3s;
+    cursor: pointer;
+}
+
+.button:hover {
+    transform: translateY(-3px);
+}
+
+.icon {
+    font-size: 35px;
+}
+.sliding-text_hd {
+    margin-top: 3%;
+    font-weight: lighter;
+    color: #ffffff;
+    font-size: xxx-large;
+    position: absolute;
+    top: 17%;
+    left: -30%;
+    transform: translateY(-50%);
+    animation: slideLeft 3s ease forwards;
+}
+
+@keyframes slideLeft {
+    0% { left: -30%; }
+    100% { left: 10%; }
+}
+.sliding-text {
+    margin-top: 15%;
+    font-weight: lighter;
+    font-size: x-large;
+    color: #ffffff;
+    position: absolute;
+    top: 30%;
+    left: -50%;
+    transform: translateY(-50%);
+    animation: slideLeft 3s ease forwards;
+}
+
+@keyframes slideLeft {
+    0% { left: -41%; }
+    100% { left: 10%; }
+}
+.globe_gif img{
+    border-style: solid;
+    border-width: 2px;
+    border-color: white;
+    border-radius: 50%;
+    transition: 0.5s ease;
+    margin-right: 30px;
+
+    &:hover{
+        border-color: #262261;
+        transition: 0.5s ease;
+        width: 510px;
+        height: 510px;
+    }
+}
+.downloads{
+    background-color: lightgray;
+    display: flex;
+    height: 350px;
+    padding: 50px;
+    padding-top: 70px; !important;
+
+
+}
+.card {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 200px;
+    height: 270px;
+    text-align: center;
+    margin-left: 12.5%;
+    transition: 0.5s ease;
+    &:hover{
+        width:210px;
+        height: 280px;
+        transition: 0.5s ease;
+
+    }
+}
+
+#windows {
+    width: 190px;
+    height: 130px;
+}
+#mac{
+    width: 100px;
+}
+#linux{
+    width: 100px;
+}
+
+.card h2 {
+    margin-top: 10px;
+    font-size: 18px;
+}
+
+.download-btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.download-btn:hover {
+    background-color: #0056b3;
+}
+#download-heading{
+    position: absolute;
+    left: 43.5%;
+    font-weight: normal;
+}
+.footer {
+    background-color: #333;
+    color: white;
+    padding: 20px 0;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    padding: 0 20px;
+}
+
+.footer-section {
+    max-width: 300px;
+}
+
+.footer-section h3 {
+    margin-top: 0;
+}
+
+.footer-section p, .footer-section a {
+    color: #ccc;
+    text-decoration: none;
+}
+
+.footer-section a:hover {
+    text-decoration: underline;
+}
+
+.footer-bottom {
+    text-align: center;
+    padding: 10px;
+    border-top: 1px solid #444;
+}
+
+.footer-bottom p {
+    margin: 0;
+}
+.footer_card {
+    width: fit-content;
+    height: fit-content;
+    background-color: #333;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 25px 25px;
+    gap: 20px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.055);
+}
+
+/* for all social containers*/
+.socialContainer {
+    width: 52px;
+    height: 52px;
+    background-color: rgb(44, 44, 44);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    transition-duration: .3s;
+}
+/* instagram*/
+.containerOne:hover {
+    background-color: #d62976;
+    transition-duration: .3s;
+}
+/* twitter*/
+.containerTwo:hover {
+    background-color: #00acee;
+    transition-duration: .3s;
+}
+/* linkdin*/
+.containerThree:hover {
+    background-color: #0072b1;
+    transition-duration: .3s;
+}
+/* Whatsapp*/
+.containerFour:hover {
+    background-color: #128C7E;
+    transition-duration: .3s;
+}
+
+.socialContainer:active {
+    transform: scale(0.9);
+    transition-duration: .3s;
+}
+
+.socialSvg {
+    width: 17px;
+}
+
+.socialSvg path {
+    fill: rgb(255, 255, 255);
+}
+
+.socialContainer:hover .socialSvg {
+    animation: slide-in-top 0.3s both;
+}
+
+@keyframes slide-in-top {
+    0% {
+        transform: translateY(-50px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
